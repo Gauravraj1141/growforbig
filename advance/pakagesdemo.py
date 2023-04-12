@@ -14,7 +14,7 @@ import pandas
 # print(name.casefold())  # it will convert upper case into lower case
 # print(name.isspace())
 #
-# # here we can write a logic here for write a name like title first letter is capital and other will small
+# here we can write a logic here for write a name like title first letter is capital and other will small
 # print(name.istitle())
 
 
@@ -29,3 +29,4 @@ data = 'ram singh'
 
 myname = title(data)
 print(myname)
+
