@@ -16,8 +16,34 @@ def title(name):
     return name
 
 
-data = 'ram singh'
+data = '    ram    singh   '
+
+# print(data.strip())
+data.split()
+# print(data)
 
 
 myname = title(data)
-print(myname)
+# print(myname)
+
+
+valuedata = "gaurav rajput,mca,99 k,23 years old"
+keydata = "name,course,salary,age"
+
+keylist = keydata.split(",")
+valuelist = valuedata.split(",")
+mydict = dict(zip(keylist,valuelist))
+mydict['mynewname'] = "rajkumar"
+mydict['name'] = "raja ji"
+mydict['age'] = "28 years old"
+print(mydict)
+print(mydict['name'])
+print(mydict['salary'])
+print(mydict['course'])
+print(mydict['age'])
+# we can remove the substring from string
+print(mydict['age'].rstrip('years old'))
+print(mydict['age'].strip('years old'))
+
+
+
