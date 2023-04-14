@@ -45,5 +45,12 @@ print(mydict['age'])
 print(mydict['age'].rstrip('years old'))
 print(mydict['age'].strip('years old'))
 
+# we can concat dictionary with the help of | bitwise OR operator
+
+report_type_data_ = dict(zip(['token'], [{'new_access_token': "ram"}]))
+dict2 = {"type": 2, "type_name": "ram"}
+concatss = report_type_data_ | dict2
+print(concatss)  # {'token': {'new_access_token': 'ram'}, 'type': 2, 'type_name': 'ram'}
+
 
 
