@@ -8,7 +8,12 @@ class Prac:
     @classmethod
     def my_func(cls):
         cls.raj = "raja"
+        print("it is class method so we can call it by class name ")
         print(cls.globalvar,cls.raj)
+
+    def newfun(self):
+        print(self)
+        print("this is instance method  we can call it by instance/object and class also")
 
 
 
@@ -26,3 +31,8 @@ print(ram.globalvar)
 Gaurav.my_func()
 # we can access this varialbe from this cls method
 print(Gaurav.raj)
+
+# we can call this function by class name
+Prac.my_func()  # globe raja
+# here we should give the value of self when we call it by class
+Prac.newfun(self="gaurav")
